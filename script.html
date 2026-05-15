@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Скрипты — NEXUS</title>
+<meta name="description" content="Каталог премиум-скриптов NEXUS. Rust, R6 Siege, Apex Legends. Undetected, мгновенный доступ, поддержка 24/7." />
+<meta name="theme-color" content="#7c5cff" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<div class="bg-stack" aria-hidden="true">
+  <div class="bg-mesh"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-noise"></div>
+  <canvas id="particles"></canvas>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+</div>
+
+<div class="loader-bar"><span></span></div>
+
+<header class="nav-wrap">
+  <nav class="nav glass">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">
+        <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M4 28 L4 4 L28 28 L28 4" stroke="url(#gn)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="gn" x1="0" y1="0" x2="32" y2="32">
+              <stop offset="0" stop-color="#7c5cff"/>
+              <stop offset="1" stop-color="#22d3ee"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </span>
+      <span class="brand-text">NEXUS</span>
+    </a>
+
+    <ul class="nav-menu">
+      <li><a href="index.html" class="nav-link">Главная</a></li>
+      <li><a href="script.html" class="nav-link active">Скрипты</a></li>
+      <li><a href="index.html#features" class="nav-link">Функции</a></li>
+      <li><a href="index.html#pricing" class="nav-link">Цены</a></li>
+      <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="#" class="status-pill">
+        <span class="dot"></span>
+        <span class="status-text">3,412 онлайн</span>
+      </a>
+      <a href="index.html#pricing" class="btn btn-primary btn-sm">
+        <span>Купить</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+      <button class="nav-burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<!-- Page hero -->
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow reveal">каталог</span>
+    <h1 class="reveal-text" data-text="">
+      Скрипты, которые <span class="grad-text">работают</span>
+    </h1>
+    <p class="reveal" data-delay="0.3">
+      Выбери игру и забери свой эдж. Все скрипты обновляются еженедельно,
+      проходят тесты на детект и поддерживают любой DPI.
+    </p>
+
+    <div class="filters reveal" data-delay="0.5">
+      <button class="filter-chip active">Все</button>
+      <button class="filter-chip">Rust</button>
+      <button class="filter-chip">Rainbow Six</button>
+      <button class="filter-chip">Apex</button>
+      <button class="filter-chip">CS2</button>
+    </div>
+  </div>
+</section>
+
+<!-- Scripts grid -->
+<section>
+  <div class="container">
+    <div class="scripts-grid">
+
+      <article class="script-card glass" data-tilt>
+        <div class="script-thumb">
+          <span class="thumb-tag hot">🔥 hot</span>
+          <span class="thumb-label">RUST</span>
+        </div>
+        <div class="script-body">
+          <h3>NEXUS Rust Pro</h3>
+          <p>Pixel-perfect контроль отдачи для всех 23 видов оружия.
+             Авто-детект, Ghostmode, кастомные паттерны от топ-игроков.</p>
+          <div class="script-meta">
+            <div class="script-price">$39<small>/мес</small></div>
+            <a href="index.html#pricing" class="btn btn-ghost btn-sm">Купить</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="script-card glass" data-tilt>
+        <div class="script-thumb">
+          <span class="thumb-tag">★ топ</span>
+          <span class="thumb-label">R6</span>
+        </div>
+        <div class="script-body">
+          <h3>R6 Siege Master</h3>
+          <p>Для рейтинговых игроков Rainbow Six. X/Y контроль, поддержка всех
+             операторов, мгновенное переключение между профилями.</p>
+          <div class="script-meta">
+            <div class="script-price">$34<small>/мес</small></div>
+            <a href="index.html#pricing" class="btn btn-ghost btn-sm">Купить</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="script-card glass" data-tilt>
+        <div class="script-thumb">
+          <span class="thumb-tag new">⚡ new</span>
+          <span class="thumb-label">APEX</span>
+        </div>
+        <div class="script-body">
+          <h3>Apex Legends Edge</h3>
+          <p>Свежий движок для Apex. Поддержка R-301, R-99, Volt, Flatline.
+             Auto-tracker и калибровка под любую чувствительность.</p>
+          <div class="script-meta">
+            <div class="script-price">$29<small>/мес</small></div>
+            <a href="index.html#pricing" class="btn btn-ghost btn-sm">Купить</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="script-card glass" data-tilt>
+        <div class="script-thumb">
+          <span class="thumb-tag">cs2</span>
+          <span class="thumb-label">CS2</span>
+        </div>
+        <div class="script-body">
+          <h3>CS2 Precision</h3>
+          <p>Для Counter-Strike 2. AK, M4, AWP-калибровка. Минимальная задержка
+             и отсутствие любых внешних DLL.</p>
+          <div class="script-meta">
+            <div class="script-price">$25<small>/мес</small></div>
+            <a href="index.html#pricing" class="btn btn-ghost btn-sm">Купить</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="script-card glass" data-tilt>
+        <div class="script-thumb">
+          <span class="thumb-tag hot">🔥 топ</span>
+          <span class="thumb-label">PUBG</span>
+        </div>
+        <div class="script-body">
+          <h3>PUBG Ace Pack</h3>
+          <p>Полный набор для классики и Erangel. Авто-детект, поддержка
+             всех штурмовых и снайперок. Без тормозов.</p>
+          <div class="script-meta">
+            <div class="script-price">$27<small>/мес</small></div>
+            <a href="index.html#pricing" class="btn btn-ghost btn-sm">Купить</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="script-card glass" data-tilt>
+        <div class="script-thumb">
+          <span class="thumb-tag new">⚡ beta</span>
+          <span class="thumb-label">VAL</span>
+        </div>
+        <div class="script-body">
+          <h3>Valorant Pulse</h3>
+          <p>Бета-версия для Valorant. Минимум вмешательства, максимум
+             точности. Работает с Vanguard через системный уровень.</p>
+          <div class="script-meta">
+            <div class="script-price">$32<small>/мес</small></div>
+            <a href="index.html#pricing" class="btn btn-ghost btn-sm">Купить</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Bundle CTA -->
+<section class="cta">
+  <div class="container">
+    <div class="cta-card glass">
+      <div class="cta-glow"></div>
+      <div class="cta-content">
+        <span class="eyebrow">all-in-one</span>
+        <h2 class="cta-title">
+          Возьми <span class="grad-text">всё сразу</span>
+        </h2>
+        <p>NEXUS Bundle — доступ ко всем играм, всем будущим релизам и
+           VIP-поддержке. Окупается за две недели.</p>
+        <div class="cta-actions">
+          <a href="index.html#pricing" class="btn btn-primary">
+            <span>Получить Lifetime</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="#" class="btn btn-ghost">Discord-комьюнити</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <span class="brand-mark">
+            <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <path d="M4 28 L4 4 L28 28 L28 4" stroke="url(#gf)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs>
+                <linearGradient id="gf" x1="0" y1="0" x2="32" y2="32">
+                  <stop offset="0" stop-color="#7c5cff"/>
+                  <stop offset="1" stop-color="#22d3ee"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </span>
+          <span class="brand-text">NEXUS</span>
+        </div>
+        <p>Премиум-скрипты для игроков нового поколения. Сделано с любовью и кофе.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Продукт</h4>
+        <a href="script.html">Каталог</a>
+        <a href="index.html#features">Функции</a>
+        <a href="index.html#pricing">Цены</a>
+        <a href="index.html#faq">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h4>Помощь</h4>
+        <a href="#">Discord</a>
+        <a href="#">База знаний</a>
+        <a href="#">Контакты</a>
+        <a href="#">Возвраты</a>
+      </div>
+      <div class="footer-col">
+        <h4>Правовое</h4>
+        <a href="#">Пользовательское</a>
+        <a href="#">Политика</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 NEXUS. Все права защищены.</span>
+      <span class="footer-status"><span class="dot"></span>Все системы работают</span>
+    </div>
+  </div>
+</footer>
+
+<div class="cursor" id="cursor" aria-hidden="true">
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+</div>
+
+<script src="assets/js/app.js"></script>
+<script>
+  // Filter chip toggle (visual only)
+  document.querySelectorAll('.filter-chip').forEach((chip) => {
+    chip.addEventListener('click', () => {
+      document.querySelectorAll('.filter-chip').forEach((c) => c.classList.remove('active'));
+      chip.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>
